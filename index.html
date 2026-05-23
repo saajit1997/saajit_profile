@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saajit Irfahn</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    #particles { position:fixed; top:0; left:0; width:100%; height:100%; pointer-events:none; z-index:0; }
+    .hero-content { position:relative; z-index:1; }
+    .fade-up { opacity:0; transform:translateY(28px); transition:opacity 0.6s ease, transform 0.6s ease; }
+    .fade-up.visible { opacity:1; transform:translateY(0); }
+    nav ul a.active { color:#fff; }
+    nav ul a.active::after { content:''; display:block; height:2px; background:var(--gold,#dba111); border-radius:2px; margin-top:2px; }
+  </style>
+</head>
+<body>
+  <canvas id="particles"></canvas>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <span class="nav-logo">Saajit Irfahn</span>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <p class="hero-greeting">Hi, I'm</p>
+          <h1>Saajit Irfahn</h1>
+          <h2>Analytics Lead &amp; Data Engineer</h2>
+          <p class="hero-desc">
+            Turning complex data into actionable insights. Specialising in ETL pipelines, machine learning,
+            risk analytics, and real-time data visualisation.
+          </p>
+          <div class="hero-links">
+            <a href="#contact" class="btn-primary">Get in Touch</a>
+            <a href="https://www.linkedin.com/in/saajit-irfahn-0bb45112a/" target="_blank" class="btn-secondary">LinkedIn</a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <div class="photo-ring">
+            <img src="profile.jpeg" alt="Saajit Irfahn" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <h3 class="section-title">About Me</h3>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm an Analytics Lead based in London with a background spanning data engineering,
+            machine learning, and risk management. I hold an <strong>MSc in Business Analytics
+            (Distinction) from University College London</strong> and an <strong>MEng in Chemical
+            Engineering from the University of Nottingham</strong>, where I was awarded the
+            Vice Chancellor's Medal.
+          </p>
+          <p>
+            At Amelco UK, I built and scaled an analytics function from the ground up — automating
+            risk management workflows, designing real-time ETL pipelines, and leveraging ML for
+            customer segmentation. My work has directly contributed to approximately <strong>$50 million
+            in customer savings</strong>.
+          </p>
+          <p>
+            I'm passionate about investing, trading, blockchain technology, and videogames.
+          </p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-num" data-value="3" data-suffix="+">3+</span>
+            <span class="stat-label">Years as Analytics Lead</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" data-value="50" data-suffix="M">$50M</span>
+            <span class="stat-label">Customer Savings Generated</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" data-value="40" data-suffix="h">40h</span>
+            <span class="stat-label">Weekly Hours Saved via Automation</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" data-value="2" data-suffix="">2</span>
+            <span class="stat-label">Postgraduate Degrees</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <h3 class="section-title">Experience</h3>
+
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <div>
+              <h4>Analytics Lead</h4>
+              <p class="company">Amelco UK Limited &mdash; London, United Kingdom</p>
+            </div>
+            <span class="timeline-date">Oct 2021 – Present</span>
+          </div>
+          <ul>
+            <li>Streamlined ETL processes by developing automated workflows to pull data from APIs, process it in real-time, and ingest it into Power BI for rapid, actionable insights.</li>
+            <li>Established and expanded the analytics team, creating a new revenue stream — reducing risk exposure by 30% in 2022 and projecting a further 35% reduction, translating to ~$50M in customer savings.</li>
+            <li>Transformed risk management from manual to automated, data-driven processes using Python, saving over 40 hours per week.</li>
+            <li>Initiated interactive data visualisation using Tableau, fundamentally changing the company's analysis and risk management methods.</li>
+            <li>Leveraged machine learning for customer segmentation, increasing trading volume and improving the company's risk profile.</li>
+            <li>Designed and maintained robust ETL/ELT strategies using Snowflake for real-time risk assessment.</li>
+            <li>Implemented real-time web scraping for competitor odds, improving offerings and reinforcing competitive edge.</li>
+          </ul>
+          <div class="tags">
+            <span>Python</span><span>Tableau</span><span>AWS Lambda</span><span>PySpark</span>
+            <span>SQL</span><span>Airflow</span><span>Power BI</span><span>Snowflake</span>
+            <span>GCP</span><span>GitHub</span>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <div>
+              <h4>Graduate Process Engineer</h4>
+              <p class="company">Worley Parsons &mdash; Kuala Lumpur, Malaysia</p>
+            </div>
+            <span class="timeline-date">Oct 2019 – Mar 2020</span>
+          </div>
+          <ul>
+            <li>Developed expertise in process safety, operation, design, and optimisation through hands-on industrial experience.</li>
+            <li>Collaborated with senior management as a HAZOP scribe, facilitating meetings and ensuring effective risk management.</li>
+            <li>Created block flow diagrams and performed HYSYS simulations based on client specifications.</li>
+            <li>Provided decision support to the CEO using Linear Regression to inform future bidding strategies.</li>
+            <li>Optimised piping material selection through modelling, achieving cost savings of up to 25%.</li>
+          </ul>
+          <div class="tags">
+            <span>HYSYS</span><span>Aspen Flare-net</span><span>Linear Regression</span><span>HAZOP</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section">
+    <div class="container">
+      <h3 class="section-title">Education</h3>
+      <div class="edu-grid">
+        <div class="edu-card">
+          <div class="edu-icon">🎓</div>
+          <h4>MSc Business Analytics</h4>
+          <p class="edu-school">University College London</p>
+          <p class="edu-grade">Distinction &mdash; 2020–2021</p>
+          <p class="edu-modules">Predictive Analytics · Data Engineering · NLP · Marketing Analytics · Statistical Foundations · Operation Analytics</p>
+        </div>
+        <div class="edu-card">
+          <div class="edu-icon">🏆</div>
+          <h4>MEng Chemical Engineering</h4>
+          <p class="edu-school">University of Nottingham</p>
+          <p class="edu-grade">2nd Upper &mdash; 2015–2019</p>
+          <p class="edu-modules">Vice Chancellor's Medal &middot; Advanced Computational Methods · Process Dynamics &amp; Control · Industrial Process Analysis</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <h3 class="section-title">Projects</h3>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <h4>Smart Contract Entity Extraction</h4>
+          <p>
+            Built a Named Entity Recognizer using NLP to extract key entities (dates, parties, clauses)
+            from transactional documents and automated execution onto smart contracts on the Solidity platform.
+            Leveraged blockchain for secure, transparent transactional processes.
+          </p>
+          <div class="tags">
+            <span>Python</span><span>Solidity</span><span>NLP</span><span>AWS</span>
+            <span>Blockchain</span><span>Docker</span><span>Heroku</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h4>Reddit Data Scraper &amp; Sentiment Analysis</h4>
+          <p>
+            Scraped data from WallStreetBets on Reddit, performed sentiment analysis using NLP,
+            and orchestrated the pipeline with Apache Airflow on AWS. Integrated results into
+            Power BI dashboards for intuitive, data-driven decision-making.
+          </p>
+          <div class="tags">
+            <span>Python</span><span>AWS</span><span>Apache Airflow</span><span>Power BI</span><span>NLP</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h3 class="section-title">Skills &amp; Tech Stack</h3>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h5>Languages</h5>
+          <div class="tags">
+            <span>Python</span><span>SQL</span><span>BASH</span><span>JavaScript</span><span>GraphQL</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h5>Data &amp; Analytics</h5>
+          <div class="tags">
+            <span>Snowflake</span><span>Spark</span><span>PySpark</span><span>Databricks</span>
+            <span>Pandas</span><span>NumPy</span><span>Scikit-learn</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h5>Databases</h5>
+          <div class="tags">
+            <span>MySQL</span><span>PostgreSQL</span><span>Microsoft SQL Server</span><span>NoSQL</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h5>Cloud &amp; DevOps</h5>
+          <div class="tags">
+            <span>AWS</span><span>GCP</span><span>AWS Lambda</span><span>GitActions</span>
+            <span>Docker</span><span>Airflow</span><span>Git</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h5>Visualisation</h5>
+          <div class="tags">
+            <span>Power BI</span><span>Tableau</span><span>MS Excel</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h5>Languages Spoken</h5>
+          <div class="tags">
+            <span>English</span><span>Tamil</span><span>Malay</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section-alt">
+    <div class="container contact-container">
+      <h3 class="section-title">Get In Touch</h3>
+      <p class="contact-desc">Whether it's a project, opportunity, or just a chat — feel free to reach out.</p>
+      <div class="contact-links">
+        <a href="mailto:saajit1997@gmail.com" class="contact-item">
+          <span class="contact-icon">✉</span>
+          saajit1997@gmail.com
+        </a>
+        <a href="tel:+447825488317" class="contact-item">
+          <span class="contact-icon">📞</span>
+          +44 7825 488317
+        </a>
+        <a href="https://www.linkedin.com/in/saajit-irfahn-0bb45112a/" target="_blank" class="contact-item">
+          <span class="contact-icon">in</span>
+          LinkedIn
+        </a>
+        <a href="https://github.com/saajit1997" target="_blank" class="contact-item">
+          <span class="contact-icon">⌥</span>
+          GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 Saajit Irfahn. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
